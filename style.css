@@ -1,0 +1,333 @@
+/* @author Naman Khandelwal */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  box-sizing: border-box;
+  background: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  position: relative;
+}
+.container .back {
+  content: "";
+  background: url(images/netflic-bg.jpg) no-repeat center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+.navbar {
+  height: 100px;
+  display: flex;
+}
+.navbar .left {
+  height: 80px;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+}
+.container .navbar .left img {
+  height: 80px;
+  position: absolute;
+  left: 10%;
+}
+.container .navbar .right {
+  display: flex;
+  height: 80px;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10%;
+}
+.container .navbar .right .language,
+.container-fott .right .language {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 5px 20px;
+  color: white;
+  background: none;
+  cursor: pointer;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.container .navbar .right .language option,
+.container-fott .right .language option {
+  background-color: grey;
+}
+.container .navbar .right button {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 6px 15px;
+  background: #e50914;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  color: white;
+}
+.container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .title .content {
+  width: 100%;
+  margin: 10% 0;
+  padding: 0 5%;
+  text-align: center;
+  display: block;
+}
+h1 {
+  width: 90%;
+  margin: auto;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  word-wrap: break-word;
+  font-weight: 900;
+}
+h2 {
+  width: 90%;
+  margin: auto;
+  padding-top: 25px;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 300;
+}
+h3 {
+  width: 90%;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin: 18px auto;
+  text-align: center;
+  font-weight: 400;
+}
+.container .title .content form .email {
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .title .content form .email input {
+  height: 55px;
+  width: 65%;
+  margin: auto;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  max-width: 450px;
+  min-width: 300px;
+  border: 0.5px solid gray;
+  background: rgba(0, 0, 0, 0.521);
+  color: white;
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.712);
+}
+.container .title .content form .email button {
+  margin: auto;
+  height: 55px;
+  width: 30%;
+  min-width: 150px;
+  max-width: 10px;
+  font-size: 20px;
+  margin: 5px;
+  padding: 7px 17px;
+  background: #e50914;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.container .title .content form .email button:hover,
+.container .navbar .right button:hover {
+  background-color: #c11119;
+}
+
+hr {
+  height: 6px;
+  background-color: rgb(35, 35, 35);
+  border: none;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.card2 {
+  flex-direction: row;
+}
+.card3 {
+  margin: 50px 0;
+}
+.card3 .title .content {
+  margin: 3% 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.fakeimg img {
+  height: 20%;
+  width: 100%;
+}
+.info {
+  width: 45%;
+}
+
+#videocontain {
+  position: relative;
+}
+.displayvideo {
+  position: absolute;
+  top: 55px;
+  z-index: -1;
+  height: 70%;
+  width: 74%;
+}
+.displayvideo2 {
+  position: absolute;
+  top: -25px;
+  z-index: -1;
+  height: 80%;
+  width: 65%;
+}
+.row-fott {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0 20px 0;
+}
+.container-fott {
+  margin: auto;
+  padding: 0 35px;
+}
+
+ul {
+  list-style: none;
+}
+.footer {
+  padding: 5% 8% 2% 8%;
+}
+.footer-col {
+  width: 30%;
+  flex: 1 0 120px;
+}
+.footer-col ul li {
+  margin-bottom: 15px;
+}
+.footer-col ul li a {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  text-transform: capitalize;
+  color: #b3b3b3;
+  font-weight: 300;
+  display: block;
+}
+
+.container-fott p,
+a {
+  color: #b3b3b3;
+}
+.container-fott .right {
+  margin-bottom: 20px;
+}
+.ques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.ques button {
+  height: auto;
+  width: 75%;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  text-align: left;
+  padding: 25px;
+  background-color: rgb(45, 45, 45);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ques button:hover {
+  background-color: rgb(65, 65, 65);
+}
+.ques button + ul {
+  width: 75%;
+  text-align: left;
+}
+.ques button + ul li {
+  padding: 25px;
+  margin-top: 0;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  background-color: rgb(45, 45, 45);
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .info {
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+  }
+  .card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-col {
+    width: 50%;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 50%;
+  }
+  .footer {
+    padding: 5% 1%;
+  }
+}
+@media (max-width: 450px) {
+  .container .navbar .left img {
+    height: 40px;
+  }
+  .ques button {
+    font-size: 0.8rem;
+  }
+  .ques button + ul li {
+    font-size: 0.8rem;
+  }
+  .container .navbar .right .language {
+    font-size: 14px;
+    padding: 5px 14px;
+  }
+  .container .navbar .right button {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+  .container .title .content form .email button {
+    height: 40px;
+    width: 15%;
+    padding: 4px 5px;
+  }
+}

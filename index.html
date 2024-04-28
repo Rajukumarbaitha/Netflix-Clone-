@@ -1,0 +1,285 @@
+<!-- @author Naman khandelwal -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="google-site-verification" content="oGPChtIs7EJa79VXhUzOWqofGKk9hKJdHSelbDrIXr0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="A Netflix Clone" />
+    <meta name="author" content="Naman Khandelwal">
+    <link rel="stylesheet" href="style.css" />
+    <title>Netflix India</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  </head> 
+  <body>
+    <div class="container">
+      <div class="back"></div>
+      <nav class="navbar">
+        <div class="left">
+          <img src="images/Netflix-Logo.png" alt="netflix logo" />
+        </div>
+        <div class="right">
+          <select name="language" class="language">
+            <option value="English">English</option>
+            <option value="Hindi">हिन्दी</option>
+          </select>
+          <button>Sign In</button>
+        </div>
+      </nav>
+
+      <div class="title">
+        <div class="content">
+          <h1>Laughter. Tears. Thrills. Find it all on Netflix.</h1>
+          <h2>Endless entertainment starts at just ₹ 149. Cancel anytime.</h2>
+          <form>
+            <h3>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </h3>
+            <div class="email">
+              <input type="text" placeholder="Email address" />
+              <button>Get&nbsp;Started&nbsp;></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- first section -->
+    <hr />
+    <div class="card card2">
+      <div class="info">
+        <h1>Enjoy on your TV</h1>
+        <h2>
+          Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+          players and more.
+        </h2>
+      </div>
+      <div class="row">
+        <div class="fakeimg" id="videocontain">
+          <img src="images/tv.png" alt="tv img" />
+        </div>
+
+        <video class="displayvideo" autoplay="" muted="" loop="">
+          <source src="images/videotv.m4v" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <!-- second section -->
+    <hr />
+    <div class="card">
+      <div class="info">
+        <h1>Download your shows to watch offline</h1>
+        <h2>Save your favourites easily and always have something to watch.</h2>
+      </div>
+      <div class="fakeimg">
+        <img src="images/Mobile.jpg" alt="mobile img" />
+      </div>
+    </div>
+    <!-- third section -->
+    <hr />
+    <div class="card card2">
+      <div class="info">
+        <h1>Watch everywhere</h1>
+        <h2>
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </h2>
+      </div>
+      <div class="row">
+        <div class="fakeimg" id="videocontain">
+          <img src="images/device-pile.png" alt="device pile" />
+        </div>
+
+        <video class="displayvideo2" autoplay="" muted="" loop="">
+          <source src="images/videodevice.m4v" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <!-- fourth section -->
+    <hr />
+    <div class="card">
+      <div class="info">
+        <h1>Create Profile For Kids</h1>
+        <h2>
+          Send children on adventures with their favourite characters in a space
+          made just for them—free with your membership.
+        </h2>
+      </div>
+      <div class="fakeimg">
+        <img src="images/child.png" alt="clind img" />
+      </div>
+    </div>
+
+    <hr />
+    <div class="card3">
+      <h1 style="text-align: center">Frequently Asked Questions</h1>
+      <br /><br />
+      <!-- frequent questions -->
+      <div class="ques">
+        <!-- ques first -->
+        <button class="btn" data-target="1">
+          What is Netflix<span data-target="1" style="float: right">+</span>
+        </button>
+        <ul>
+          <li class="hide" data-target="1">
+            <p>
+              Netflix is a streaming service that offers a wide variety of
+              award-winning TV shows, movies, anime, documentaries and more - on
+              thousands of internet-connected devices.<br />
+              <br />
+              can watch as much as you want, whenever you want, without a single
+              ad - all for one low monthly price. There's always something new
+              to discover, and new TV shows and movies are added every week!
+            </p>
+          </li>
+        </ul>
+        <!-- ques second -->
+        <button class="btn" data-target="2">
+          How much does Netflix cost?<span data-target="2" style="float: right">+</span>
+        </button>
+        <ul>
+          <li class="hide" data-target="2">
+            <p>
+              Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+              streaming device, all for one fixed monthly fee. Plans range from
+              149 to 649 a month. No extra costs, no contracts.
+            </p>
+          </li>
+        </ul>
+        <!-- ques third -->
+        <button class="btn" data-target="3">
+          Where can I watch?<span data-target="3" style="float: right">+</span>
+        </button>
+        <ul>
+          <li class="hide" data-target="3">
+            <p>
+              Watch anywhere, anytime. Sign in with your Netflix account to
+              watch instantly on the web at netflix.com from your personal
+              computer or on any intemet-connected device that offers the
+              Netflix app, including smart TVs, smartphones, tablets, streaming
+              media players and game consoles. <br />
+              <br />
+              You can also download your favourite shows with the iOS, Android,
+              or Windows 10 app. Use downloads to watch while you're on the go
+              and without an internet connection. Take Netflix with you
+              anywhere.
+            </p>
+          </li>
+        </ul>
+        <!-- ques fourth -->
+        <button class="btn" data-target="4">
+          How do I cancel?<span data-target="4" style="float: right">+</span>
+        </button>
+        <ul>
+          <li class="hide" data-target="4">
+            <p>
+              Netflix is flexible. There are no annoying contracts and no
+              commitments. You can easily cancel your account online in two
+              clicks. There are no cancellation fees — start or stop your
+              account anytime.
+            </p>
+          </li>
+        </ul>
+        <!-- ques fifth -->
+        <button class="btn" data-target="5">
+          What can I watch on Netflix?<span data-target="5" style="float: right">+</span>
+        </button>
+        <ul>
+          <li class="hide" data-target="5">
+            <p>
+              Netflix has an extensive library of feature films, documentaries,
+              TV shows, anime, award- winning Netflix originals, and more. Watch
+              as much as you want, anytime you want.
+            </p>
+          </li>
+        </ul>
+        <!-- ques sixth -->
+        <button class="btn" data-target="6">
+          Is Netflix good for kids?<span data-target="6" style="float: right">+</span>
+        </button>
+        <ul>
+          <li class="hide" data-target="6">
+            <p>
+              The Netflix Kids experience is included in your membership to give
+              parents control while kids enjoy family-friendly TV shows and
+              films in their own space. <br /><br />
+              Kids profiles come with PIN-protected parental controls that let
+              you restrict the maturity rating of content kids can watch and
+              block specific titles you don't want kids to see.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="title">
+          <div class="content">
+            <form>
+              <h3>
+                Ready to watch? Enter your email to create or restart your
+                membership.
+              </h3>
+              <div class="email">
+                <input type="text" placeholder="Email address" />
+                <button>Get&nbsp;Started&nbsp;></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <hr />
+    <footer class="footer" id="fot">
+      <div class="container-fott">
+        <p>Questions? Call <a href="">000-800-919-1694</a></p>
+
+        <div class="row-fott">
+          <div class="footer-col">
+            <ul>
+              <li><a href="#fot">FAQ</a></li>
+              <li><a href="#fot">Media Center</a></li>
+              <li><a href="#fot">Way To Watch</a></li>
+              <li><a href="#fot">Cookie Preferences</a></li>
+              <li><a href="#fot">Speed Test</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#fot">Help Center</a></li>
+              <li><a href="#fot">Investor Relations</a></li>
+              <li><a href="#fot">Terms of Use</a></li>
+              <li><a href="#fot">Corporate Information</a></li>
+              <li><a href="#fot">Legal Notices</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="#fot">Account</a></li>
+              <li><a href="#fot">Jobs</a></li>
+              <li><a href="#fot">Privacy</a></li>
+              <li><a href="#fot">Contact Us</a></li>
+              <li><a href="#fot">Only on Netflix</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right">
+          <select name="language" class="language">
+            <option value="English">English</option>
+            <option value="Hindi">हिन्दी</option>
+          </select>
+        </div>
+        <p>Netflix India</p>
+        <p style="text-align: center">
+          Copyright &copy; 2023 by Naman Khandelwal
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+  </body>
+</html>
